@@ -6,6 +6,11 @@ def generate_pie_chart():
 
     fig, ax =pylot.subplots()
     ax.pie(values, labels=labels)
-    pylot.savefig('pie.png')
+    pylot.savefig('chart_pie_final.png')
     pylot.close()
+
+if __name__ == '__main__':
+    labels = ['a','b','c']
+    values = [10,40,800]
+    generate_pie_chart(labels,values)
     
